@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  color: #123454;
+  font-family: Arial;
+  background: #007aff; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+header {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #fff; }
+  header h1 {
+    color: #fff; }
+
+.widget-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 570px;
+  margin: auto;
+  padding: 0 10px; }
+  .widget-body .widget-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75); }
+    .widget-body .widget-header h2 {
+      color: #fff; }
+    .widget-body .widget-header .state-heandler {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background: url("../img/arrow-down-sign-to-navigate.png") center center no-repeat; }
+    .widget-body .widget-header.active .state-heandler {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .widget-body .interactiv-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    background: #007aff;
+    margin-bottom: 20px;
+    min-height: 372px;
+    z-index: 2; }
+    .widget-body .interactiv-box .title-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 2px solid #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: 0; }
+      .widget-body .interactiv-box .title-list h4 {
+        position: relative;
+        text-align: center;
+        width: 50%; }
+    .widget-body .interactiv-box .form-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top: 0; }
+      .widget-body .interactiv-box .form-section label {
+        position: relative;
+        padding: 0 20px; }
+        .widget-body .interactiv-box .form-section label:first-child {
+          padding-left: 0; }
+        .widget-body .interactiv-box .form-section label.quantity-label:before {
+          content: '';
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-top: -12px;
+          position: absolute;
+          left: -5px;
+          top: 50%;
+          background: url("../img/dollar-sign.png") center center no-repeat; }
+      .widget-body .interactiv-box .form-section input {
+        padding: 0 20px;
+        height: 40px;
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        outline: 0;
+        width: 100%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        -webkit-box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+                box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75); }
+        .widget-body .interactiv-box .form-section input::-webkit-input-placeholder {
+          color: #fff; }
+        .widget-body .interactiv-box .form-section input::-ms-input-placeholder {
+          color: #fff; }
+        .widget-body .interactiv-box .form-section input::placeholder {
+          color: #fff; }
+        .widget-body .interactiv-box .form-section input:focus::-webkit-input-placeholder {
+          color: transparent; }
+        .widget-body .interactiv-box .form-section input:focus::-ms-input-placeholder {
+          color: transparent; }
+        .widget-body .interactiv-box .form-section input:focus::placeholder {
+          color: transparent; }
+      .widget-body .interactiv-box .form-section .addBtn {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        height: 40px;
+        min-width: 40px;
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        outline: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        -webkit-box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+                box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75); }
+        .widget-body .interactiv-box .form-section .addBtn:before {
+          content: '';
+          display: block;
+          background: #fff;
+          width: 20px;
+          height: 2px;
+          margin-top: -1px;
+          margin-left: -10px;
+          position: absolute;
+          left: 50%;
+          top: 50%; }
+        .widget-body .interactiv-box .form-section .addBtn:after {
+          content: '';
+          display: block;
+          background: #fff;
+          height: 20px;
+          width: 2px;
+          margin-top: -10px;
+          margin-left: -1px;
+          position: absolute;
+          left: 50%;
+          top: 50%; }
+  .widget-body .widget-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+    height: 490px;
+    overflow: hidden; }
+  .widget-body .title-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    min-height: 62px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid #fff;
+    z-index: -1;
+    -webkit-box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 5px 5px 24px -8px rgba(0, 0, 0, 0.75); }
+    .widget-body .title-price p {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 600; }
+      .widget-body .title-price p#total_price {
+        position: relative;
+        color: #fff;
+        margin-left: 40px; }
+        .widget-body .title-price p#total_price:before {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          margin-top: -8px;
+          background: url("../img/american-dollar-symbol.png") center center no-repeat;
+          position: absolute;
+          left: -18px;
+          top: 50%; }
+
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  overflow-y: auto;
+  background: #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff; }
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-bottom: 1px solid #000; }
+  ul li span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 16px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 7px 20px;
+    width: 50%;
+    position: relative; }
+    ul li span.currency:before {
+      content: '';
+      width: 1px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      right: -1px;
+      top: 0;
+      background: #000; }
+    ul li span.quantity {
+      position: relative;
+      padding-left: 40px;
+      padding-right: 50px; }
+      ul li span.quantity:before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        background: url("../img/dollar-symbol.png") center center no-repeat;
+        position: absolute;
+        left: 20px;
+        top: 50%; }
+    ul li span.del {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -8px;
+      cursor: pointer;
+      display: block;
+      padding: 0;
+      width: 16px;
+      height: 16px;
+      background: url("../img/close.png") center center no-repeat; }
+
+ul li:hover {
+  background: #ddd; }
+
+@media screen and (max-width: 600px) {
+  ul li span {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 7px 10px; }
+    ul li span.quantity {
+      padding-left: 30px; }
+      ul li span.quantity:before {
+        left: 10px; }
+  .widget-body .interactiv-box .form-section input {
+    padding: 0 8px;
+    text-align: center; } }

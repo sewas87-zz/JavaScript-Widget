@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  color: #123454;
+  font-family: Arial;
+  background: #007aff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #fff;
+  h1{
+    color: #fff;
+  }
+}
+.widget-body{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 570px;
+  margin: auto;
+  padding: 0 10px;
+  .widget-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 5px 5px 24px -8px rgba(0,0,0,0.75);
+    h2{
+      color: #fff;
+    }
+    .state-heandler{
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background: url("../img/arrow-down-sign-to-navigate.png") center center no-repeat;
+    }
+    &.active{
+      .state-heandler{
+          transform: rotate(180deg);
+      }
+    }
+  }
+  .interactiv-box{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 24px -8px rgba(0,0,0,0.75);
+    background: #007aff;
+    margin-bottom: 20px;
+    min-height: 372px;
+    z-index: 2;
+    .title-list{
+      display: flex;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 2px solid #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: 0;
+      h4{
+        position: relative;
+        text-align: center;
+        width: 50%;
+      }
+    }
+    .form-section{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top: 0;
+      label{
+        position: relative;
+        padding: 0 20px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &.quantity-label{
+          &:before{
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            background: url("../img/dollar-sign.png") center center no-repeat;
+          }
+        }
+      }
+      input{
+        padding: 0 20px;
+        height: 40px;
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        outline: 0;
+        width: 100%;
+        box-shadow: none;
+        box-shadow: 5px 5px 24px -8px rgba(0,0,0,0.75);
+        &::placeholder{
+          color: #fff;
+        }
+        &:focus{
+          &::placeholder{
+            color: transparent;
+          }
+        }
+      }
+      .addBtn{
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        height: 40px;
+        min-width: 40px;
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        outline: 0;
+        box-shadow: none;
+        box-shadow: 5px 5px 24px -8px rgba(0,0,0,0.75);
+        &:before{
+          content: '';
+          display: block;
+          background: #fff;
+          width: 20px;
+          height: 2px;
+          margin-top: -1px;
+          margin-left: -10px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+        }
+        &:after{
+          content: '';
+          display: block;
+          background: #fff;
+          height: 20px;
+          width: 2px;
+          margin-top: -10px;
+          margin-left: -1px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+        }
+      }
+    }
+  }
+  .widget-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: height .5s ease;
+    height: 490px;
+    overflow: hidden;
+  }
+  .title-price{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 62px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid #fff;
+    z-index: -1;
+    box-shadow: 5px 5px 24px -8px rgba(0,0,0,0.75);
+    p{
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 600;
+      &#total_price{
+        position: relative;
+        color: #fff;
+        margin-left: 40px;
+        &:before{
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          margin-top: -8px;
+          background: url("../img/american-dollar-symbol.png") center center no-repeat;
+          position: absolute;
+          left: -18px;
+          top: 50%;
+        }
+      }
+    }
+
+  }
+}
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  overflow-y: auto;
+  background: #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+  user-select: none;
+  border-bottom: 1px solid #000;
+  span{
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    justify-content: flex-start;
+    padding: 7px 20px;
+    width: 50%;
+    position: relative;
+    &.currency{
+      &:before{
+        content: '';
+        width: 1px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        right: -1px;
+        top: 0;
+        background: #000;
+      }
+    }
+    &.quantity{
+      position: relative;
+      padding-left: 40px;
+      padding-right: 50px;
+      &:before{
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        background: url("../img/dollar-symbol.png") center center no-repeat;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+      }
+    }
+    &.del{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -8px;
+      cursor: pointer;
+      display: block;
+      padding: 0;
+      width: 16px;
+      height: 16px;
+      background: url("../img/close.png") center center no-repeat;
+    }
+  }
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  ul{
+    li{
+      span{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 7px 10px;
+        &.quantity{
+          padding-left: 30px;
+          &:before{
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .widget-body .interactiv-box .form-section input{
+    padding: 0 8px;
+    text-align: center;
+  }
+}
+
+
+
+
+

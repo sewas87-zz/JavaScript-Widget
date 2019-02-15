@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Header Of Page -->
+<header>
+    <h1>Widget</h1>
+</header>
+<!-- Widget section -->
+<section class="widget-body">
+    <!-- Header of widget -->
+    <div id="widget-header" class="widget-header active">
+        <h2>Expenses</h2>
+        <div class="state-heandler"></div>
+    </div>
+    <!-- Content-box -->
+    <div id="widget-content" class="widget-content">
+        <div class="interactiv-box">
+            <!-- title of list -->
+            <div class="title-list">
+                <h4>Name</h4>
+                <h4>Amount</h4>
+            </div>
+            <!-- List -->
+            <ul id="currency_list">
+
+            </ul>
+            <!-- Form with input parameters -->
+            <form id="add_currency" class="form-section">
+                <label class="currency-label">
+                    <input type="text" id="currency" placeholder="Currency">
+                </label>
+                <label class="quantity-label">
+                    <input type="text" id="quantity" placeholder="Quantity">
+                </label>
+                <button type="submit" class="addBtn"></button>
+            </form>
+        </div>
+        <!-- Total price -->
+        <div class="title-price">
+            <p>Total:</p>
+            <p id="total_price">0</p>
+        </div>
+    </div>
+</section>
+<script src="js/common.js"></script>
+</body>
+</html>
